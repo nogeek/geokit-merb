@@ -54,7 +54,13 @@ module Geokit
         send :include, Geokit::Mappable
         
         # Handle class variables.
-        cattr_accessor :distance_column_name, :default_units, :default_formula, :lat_column_name, :lng_column_name, :qualified_lat_column_name, :qualified_lng_column_name
+        cattr_accessor :distance_column_name, 
+                       :default_units, 
+                       :default_formula, 
+                       :lat_column_name, 
+                       :lng_column_name, 
+                       :qualified_lat_column_name, 
+                       :qualified_lng_column_name
         self.distance_column_name = options[:distance_column_name]  || 'distance'
         self.default_units = options[:default_units] || Geokit::default_units
         self.default_formula = options[:default_formula] || Geokit::default_formula

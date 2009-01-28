@@ -1,16 +1,15 @@
 ## INSTALLATION
   
-Geokit consists of a Gem ([geokit-gem](http://github.com/andre/geokit-gem/tree/master)) and a Rails plugin ([geokit-rails](http://github.com/andre/geokit-rails/tree/master)).
+Geokit consists of a Gem ([geokit-gem](http://github.com/andre/geokit-gem/tree/master)) and a Merb plugin ([geokit-merb](http://github.com/erudified/geokit-merb/tree/master)).
 
 ### First install the gem:
 
     gem sources -a http://gems.github.com
     sudo gem install andre-geokit
 
-### Next, install the Rails plugin:
+### Next, install is plugin:
 
-    cd [YOUR_RAILS_APP_ROOT]
-    script/plugin install git://github.com/andre/geokit-rails.git
+    sudo gem install erudified-geokit-merb
 
 And you're good to go! FYI, the gem stands alone (you can use it without the plugin), but the plugin requires the gem.
 
